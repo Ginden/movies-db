@@ -1,0 +1,31 @@
+{
+  "name": "movies-db",
+  "version": "1.0.0",
+  "description": "Netguru recruitment task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ginden/movies-db.git"
+  },
+  "author": "Michał Wadas <michalwadas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ginden/movies-db/issues"
+  },
+  "homepage": "https://github.com/Ginden/movies-db#readme",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "express": "^4.16.3",
+    "fs-extra": "^7.0.0",
+    "lodash": "^4.17.10",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.5.0",
+    "jest": "^23.6.0",
+  }
+}

@@ -4,7 +4,8 @@
   "description": "Netguru recruitment task",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint lib test --ext .js --fix",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,14 +19,18 @@
   "homepage": "https://github.com/Ginden/movies-db#readme",
   "dependencies": {
     "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "fs-extra": "^7.0.0",
     "lodash": "^4.17.10",
+    "request": "^2.88.0",
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "eslint": "^5.5.0",
+    "eslint-plugin-jest": "^21.22.0",
     "jest": "^23.6.0",
+    "sinon": "^6.2.0"
   }
 }

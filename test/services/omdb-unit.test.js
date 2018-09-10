@@ -24,7 +24,7 @@ test('OMDbApiClient#fetchById calls request function with proper arguments', asy
     mockedRequest.mockReturnValue(Promise.resolve(shortResponse));
     const instance = new OMDbApiClient('foobar', mockedRequest);
     await instance.fetchById(42);
-    const calls = mockedRequest.mock.calls;
+    const {calls} = mockedRequest.mock;
     expect(calls).toHaveLength(1);
     const [args] = calls;
     expect(args).toEqual([
@@ -45,7 +45,7 @@ test('OMDbApiClient#fetchByTitle calls request function with proper arguments', 
     mockedRequest.mockReturnValue(Promise.resolve(shortResponse));
     const instance = new OMDbApiClient('foobar', mockedRequest);
     await instance.fetchByTitle('back');
-    const calls = mockedRequest.mock.calls;
+    const {calls} = mockedRequest.mock;
     expect(calls).toHaveLength(1);
     const [args] = calls;
     expect(args).toEqual([

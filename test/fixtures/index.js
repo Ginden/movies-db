@@ -1,9 +1,13 @@
 'use strict';
 
+const shortResponse = require('./omdb/back-to-the-future');
+const longResponse = require('./omdb/back-to-future-full');
+const movieNotFound = require('./omdb/movie-not-found');
+
 const omdb = {
-    shortResponse: require('./omdb/back-to-the-future'),
-    longResponse: require('./omdb/back-to-future-full'),
-    movieNotFound: require('./omdb/movie-not-found')
+    shortResponse,
+    longResponse,
+    movieNotFound
 };
 
 module.exports.omdb = omdb;

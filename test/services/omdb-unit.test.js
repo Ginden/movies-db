@@ -35,7 +35,8 @@ test('OMDbApiClient#fetchById calls request function with proper arguments', asy
             'qs': {
                 'apikey': 'foobar',
                 'i': 42
-            }
+            },
+            json: true
         }
     ]);
 });
@@ -56,7 +57,8 @@ test('OMDbApiClient#fetchByTitle calls request function with proper arguments', 
             'qs': {
                 'apikey': 'foobar',
                 't': 'back'
-            }
+            },
+            json: true
         }
     ]);
 });
